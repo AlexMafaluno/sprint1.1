@@ -7,6 +7,7 @@ body {
 .grid-layout {
     
     display : grid;
+    max-width:1200px;
     /*grid-template-columns: auto;*/
     /*background-color: lightgreen;*/
     /*padding: 50px;
@@ -126,4 +127,34 @@ body {
     border: 10px solid black;
     margin: 10px;
     
+}
+
+@media only screen and (max-width: 768px) {
+
+    body{
+        background-color: blueviolet;
+    }
+    .caja{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .medio{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    body{
+        background-color: blue;
+    }
+
+    .medio-articulos{
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }
